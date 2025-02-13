@@ -1,0 +1,145 @@
+/* 
+html,body{
+  height: 100%;
+  margin: 0%;
+}
+
+.main {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+}
+h1 {
+  background: #8f5959;
+  color: black;
+  text-align: center;
+  margin-top: 5px;
+}
+.color {
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  border: 2px;
+}
+.select-bar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: black;
+  border: solid 5px;
+  padding: 2%;
+  margin: 2%;
+
+}
+.btn-bar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: antiquewhite;
+}
+.btn{
+  border-radius: 50%;
+  color: rgb(117, 92, 92);
+  font-weight: 900;
+  padding: 12px;
+  
+  cursor: pointer;
+  
+
+} */
+
+/* Reset default margin and set height for html and body */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif; /* Set a default font */
+}
+
+/* Main container to center content */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column; /* Stack elements vertically */
+}
+
+/* Header styling */
+h1 {
+  background: #8f5959;
+  color: black;
+  text-align: center;
+  margin: 5px 0; /* Adjust margin for better spacing */
+  padding: 10px; /* Add padding for better appearance */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Color display box */
+.color {
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  border: 2px solid #000; /* Add a solid border */
+  border-radius: 10px; /* Rounded corners */
+  margin: 20px 0; /* Add margin for spacing */
+}
+
+/* Select bar styling */
+.select-bar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: black;
+  border: solid 5px #fff; /* White border for contrast */
+  padding: 2%;
+  margin: 2%;
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Button bar styling */
+.btn-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; 
+  padding: 10px;
+  background-color: antiquewhite;
+  border-radius: 10px; 
+}
+
+
+.btn {
+  border-radius: 50%;
+  color: rgb(117, 92, 92);
+  font-weight: 900;
+  padding: 12px;
+  cursor: pointer;
+  border: none; 
+    transition: transform 0.2s; 
+}
+
+
+.btn:hover {
+  transform: scale(1.1); 
+}
+
+
+@media (max-width: 768px) {
+  .color {
+      width: 80vw; 
+      height: 40vh; 
+  }
+
+  .btn {
+      padding: 10px; 
+  }
+}
